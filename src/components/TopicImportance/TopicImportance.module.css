@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+/*
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  background: #bedfe8;
+}
+
+.accordion {
+  width: 800px;
+}
+
+.contentBx {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.label,
+.label-active {
+  position: relative;
+  padding: 10px;
+  background: #2694af;
+  color: #fff;
+  cursor: pointer;
+}
+.label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+.label-active::before {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.content {
+  position: relative;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.content-active {
+  max-height: 150px;
+  transition: 0.5s;
+} */
+
+.combo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 390px;
+}
+
+.title {
+  margin: 0 10px;
+  width: 300px;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+li {
+  list-style: none;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .items {
+    max-width: 290px;
+  }
+  .title {
+    width: 200px;
+  }
+}

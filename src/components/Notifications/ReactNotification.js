@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import classes from "./ReactNotifications.module.css";
 
 const ReactNotificationComponent = ({ title, body }) => {
   let hideNotif = title === "";
@@ -12,16 +13,16 @@ const ReactNotificationComponent = ({ title, body }) => {
 
   function Display() {
     return (
-      <div>
-        <h4>{title}</h4>
-        <p>{body}</p>
+      <div className={classes.notification}>
+        <h4 className={classes.title}>{title}</h4>
+        <p className={classes.body}>{body}</p>
       </div>
     );
   }
 
   return (
     <ToastContainer
-      autoClose={3000}
+      autoClose={30000}
       hideProgressBar
       newestOnTop={false}
       closeOnClick
